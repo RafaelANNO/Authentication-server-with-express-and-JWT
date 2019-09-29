@@ -1,0 +1,30 @@
+{
+  "name": "mean",
+  "version": "1.0.0",
+  "description": "A basic auth system in meanstack with jwt",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Rafael ANNO",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "is-empty": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.9",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "validator": "^11.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.3"
+  }
+}
