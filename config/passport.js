@@ -2,6 +2,7 @@ const JwtStrategy = require("passport-jwt").Strategy;
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 
 const mongoose = require("mongoose");
+
 // User nous permet de donner un passport à un user enregistré
 const User = mongoose.model("users");
 
