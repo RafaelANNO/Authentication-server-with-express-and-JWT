@@ -73,19 +73,22 @@ router.post("/login", (req, res) => {
                     id: user.id,
                     name: user.name
                 };
+
                 // Sign token
                 jwt.sign(
                     payload,
                     keys.secretOrKey,
                     {
                         // 1 year in seconds
-                        expiresIn: 31556926 
+                        expiresIn: 31556926
                     },
                     (err, token) => {
-                        res.json({
-                            success: true,
-                            token: "Bearer " + token
-                        });
+                        if (!err) {
+                            res.json({
+                                success: true,
+                                token: "Bearer " + token
+                            });
+                        }
                     }
                 );
             } else {
